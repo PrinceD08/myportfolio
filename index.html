@@ -9,113 +9,143 @@
 </head>
 <style>
     body{
-        background: linear-gradient(to right, rgb(5, 0, 20));
-        background-attachment: fixed;
-        color: white;
-    }
-    h1{
-        color: dodgerblue;
-        font-size: 400%;
-    }
-    #mainborder{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(to right, rgb(2, 45, 88), rgb(0, 0, 255));
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    h2{
-        font-size: 300%;
-    }
-    #top{
-        font-size: 150%;
-    }
-    p{
-        font-size: 150%;
+        background-color: black;
+        color: rgb(83, 169, 255);
     }
     span{
-        background: linear-gradient(to right, rgb(0, 126, 252), rgb(0, 0, 170));
-        background-clip: text;
+        background: linear-gradient(to right, dodgerblue, purple);
         -webkit-background-clip: text;
+        background-clip: text;
         -webkit-text-fill-color: transparent;
     }
-    #view{
+    #border, #about-me, #featured-projects, #technical-skills, #get-in-touch{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    h1, h2, h3, h4, h5, h6{
+        font-size: 250%;
+    }
+    #view-my-work{
         background-color: aqua;
         color: black;
+        padding: 0 2%;
+        border-radius: 1em;
+    }
+    #getintouch{
+        background: linear-gradient(to right, dodgerblue, purple);
+        margin-top: 2%;
+        padding: 0 2%;
+        border-radius: 1em;
+    }
+    .subborder{
+        width: 50%;
+        box-shadow: 0 0 5px lightskyblue;
+        padding: 1% 2%;
+        margin-top: 3%;
+        border-radius: 1em;
+    }
+    .subborder:hover{
+        box-shadow: 0 0 20px lightskyblue;
+    }
+    .border3{
+        background-color: rgb(14, 14, 14);
+        padding: 1% ;
+        margin-top: 5%;
+        border-radius: 1em;
+    }
+    #email-me{
+        background-color: aqua;
+        width: 20%;
         padding: 1% 3%;
         border-radius: 1em;
     }
-    h3{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-size: 300%;
-    }
-    .border{
-        box-shadow: 0 0 10px white;
-        margin: 4% 4%;
-        padding: 1%;
+    #get-in-touch{
+        box-shadow: 0 0 10px dodgerblue;
+        padding: 3% 0;
+        margin: 0 13%;
         border-radius: 1em;
     }
-    h4{
-        font-size: 400%;
+    #get-in-touch:hover{
+        box-shadow: 0 0 20px dodgerblue;
     }
-    #border2{
+    footer{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        justify-content: center;
+        margin-top: 3%;
+        color: white;
     }
 </style>
 <body>
-    <div id="mainborder">
-    <h1>WELCOME TO MY PORTFOLIO</h1>
-    <h2>Hi, I'm <span>David</span></h2>
-    <p id="top">Computer Engineering Student</p>
-    <p>Building innovative solutions and crafting exceptional digital experiences through cutting-edge
-        technology and creative problem-solving.
-    </p>
-    <div id="view"><p>View My Work</p></div>
-    <div id="get"><p>Get In Touch</p></div>
-    </div>
-    <div>
-        <h3>About <span>Me</span></h3>
-        <p>I'm a passionate Computer Engineering student with a deep fascination for technology and innovation.
-        My journey in tech is driven by curiosity and te desire to create solutions that make a difference.
-        <br>
-        With a strong foundation in both hardware and software,
-         i enjoy bridging the gap between theoretical concepts and practical applications.
-         I'm constantly learning and adapting to the ever-evolving tech landscape.
-         <br>
-         When i'm not coding, you'll find me exploring new technologies, contributing to open-source projects,
-         or working on innovate side projects that push the boundaries of what's possible.
+    <section id="border">
+        <h1><u><span>Welcome To My Portfolio</span></u></h1>
+        <h2>Hi, I'm David</h2>
+        <p>Building innovate solutions and crafting exceptional digital experiences through cutting-edge technology
+            and creative problem-solving.
         </p>
-    </div>
-    <div class="border">
-        <p> < /> Full-Stack Developer</p>
-        <p>Building modern web applications with cutting-edge technologies</p>
-    </div>
-    <div class="border">
-        <p>💻 Problem Solver</p>
-        <p>Passionate about algorithmic thinking and system optimization</p>
-    </div>
-    <div class="border">
-        <p>⚡ Quick Learner</p>
-        <p>Always exploring new technologies and industry best practices</p>
-    </div>
-    <div id="border2">
-    <h4>Techical <span>Skills</span></h4>
-    <div class="subborder2">
-        <p>React</p>
-        <input type="radio">
-    </div>
-    <div class="subborder2">
-        <p></p>
-        <p></p>
-    </div>
-</div>
+        <div id="view-my-work">
+            <p>View my Work</p>
+        </div>
+        <div id="getintouch">
+            <p>Get In Touch</p>
+        </div>
+    </section>
+    <section id="about-me">
+        <h3><u>About <span>Me</span></u></h3>
+        <p>I'm a passionate Guy with a deep fascination for technology and innovation.
+            My journey in tech is driven by curiosity and the di=esire to create solutions that make a difference.
+        </p>
+        <p>I enjoy bridging the gap between theoretical concepts and practical applications.
+            I'm constantly learning and adapting to the ever-evolving tech landscape.
+        </p>
+        <p>When I'm not coding, you'll me exploring new technologies, contibuting to open-source projects, or working on innovate 
+            side projects that push the boundaries of what's possible.
+        </p>
+        <div class="subborder">
+            <p>< /> Frontend Developer</p>
+            <p>Building modern web applications with cutting-edge technologies</p>
+        </div>
+        <div class="subborder">
+            <p>💻 Problem Solver</p>
+            <p>Passionate about algotithmic thinking and system optimization</p>
+        </div>
+        <div class="subborder">
+            <p>⚡ Quick Learner</p>
+            <p>Always exploring new technologies and industry best practice</p>
+        </div>
+    </section>
+    <section id="technical-skills">
+        <h4><u>Technical <span>Skills</span></u></h4>
+    </section>
+    <section id="featured-projects">
+        <h5><u>Featured <span>Projects</span></u></h5>
+        <div id="border2">
+            <p></p>
+        </div>
+    </section>
+    <section id="get-in-touch">
+        <h6><u>Get In <span>Touch</span></u></h6>
+        <p>Let's connect and create something amazing together</p>
+        <div>
+            <div class="border3">
+                <p>📧 Email</p>
+                <p>princedavid2001101@gmail.cm</p>
+            </div>
+            <div class="border3">
+                <p>Github</p>
+                <p></p>
+            </div>
+            <p>Currently open to new opportunities and collaborations</p>
+            <div id="email-me">
+                <p><a href="mailto:princedavid2001101@gmail.com">Email Me</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        &copy; David. Built with Html, Css and JavaScript.
+    </footer>
 </body>
 </html>
